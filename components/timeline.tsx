@@ -1,13 +1,13 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { useMobile } from "@/hooks/use-mobile"
+import { motion } from "framer-motion";
+import { useMobile } from "@/hooks/use-mobile";
 
 const experiences = [
   {
-    title: "Junior Graphic Designer (Part-Time)",
+    title: "Junior Graphic Designer",
     company: "Diginovas Solutions, Gurugram.",
-    period: "Dec 2024 - Present",
+    period: "Dec 2024 - Feb 2025",
     description:
       "Designed engaging visuals including logos, marketing creatives, and social media content and Collaborated with clients to deliver brand-aligned digital assets.",
   },
@@ -18,10 +18,10 @@ const experiences = [
     description:
       "Created promotional assets such as thumbnails, posters, and carousels also utilized Adobe CC tools to support digital marketing campaigns",
   },
-]
+];
 
 export function Timeline() {
-  const isMobile = useMobile()
+  const isMobile = useMobile();
 
   return (
     <div
@@ -34,10 +34,14 @@ export function Timeline() {
       {experiences.map((experience, index) => (
         <div
           key={index}
-          className={`relative z-10 flex items-center ${index % 2 === 0 ? "md:flex-row-reverse" : "md:flex-row"}`}
+          className={`relative z-10 flex items-center ${
+            index % 2 === 0 ? "md:flex-row-reverse" : "md:flex-row"
+          }`}
         >
           <motion.div
-            className={`w-full md:w-1/2 ${index % 2 === 0 ? "md:pl-10" : "md:pr-10"}`}
+            className={`w-full md:w-1/2 ${
+              index % 2 === 0 ? "md:pl-10" : "md:pr-10"
+            }`}
             initial={{ opacity: 0, x: index % 2 === 0 ? 50 : -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
@@ -72,5 +76,5 @@ export function Timeline() {
         </div>
       ))}
     </div>
-  )
+  );
 }
