@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 
 interface SkillBadgeProps {
-  name: string
-  level: number
+  name: string;
+  level: number;
 }
 
 export function SkillBadge({ name, level }: SkillBadgeProps) {
@@ -20,7 +20,9 @@ export function SkillBadge({ name, level }: SkillBadgeProps) {
         <div className="absolute -inset-1 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-xl blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
 
         <div className="relative">
-          <div className="text-center mb-4 font-medium text-lg h-16 flex items-center justify-center">{name}</div>
+          <div className="text-center mb-4 font-medium text-lg h-16 flex items-center justify-center">
+            {name}
+          </div>
 
           <div className="relative h-2.5 w-full bg-zinc-700 rounded-full overflow-hidden">
             <motion.div
@@ -36,5 +38,5 @@ export function SkillBadge({ name, level }: SkillBadgeProps) {
         </div>
       </div>
     </motion.div>
-  )
+  );
 }

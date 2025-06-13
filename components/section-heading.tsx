@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 
 interface SectionHeadingProps {
-  title: string
-  subtitle: string
+  title: string;
+  subtitle: string;
 }
 
 export function SectionHeading({ title, subtitle }: SectionHeadingProps) {
@@ -42,5 +42,5 @@ export function SectionHeading({ title, subtitle }: SectionHeadingProps) {
         viewport={{ once: true }}
       />
     </div>
-  )
+  );
 }

@@ -1,35 +1,35 @@
-"use client"
+"use client";
 
-import type React from "react"
+import type React from "react";
 
-import { useState } from "react"
-import { motion } from "framer-motion"
-import { Send } from "lucide-react"
+import { useState } from "react";
+import { motion } from "framer-motion";
+import { Send } from "lucide-react";
 
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { useToast } from "@/hooks/use-toast"
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { useToast } from "@/hooks/use-toast";
 
 export function ContactForm() {
-  const { toast } = useToast()
-  const [isSubmitting, setIsSubmitting] = useState(false)
+  const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    setIsSubmitting(true)
+    e.preventDefault();
+    setIsSubmitting(true);
 
     // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500))
+    await new Promise((resolve) => setTimeout(resolve, 1500));
 
     toast({
       title: "Message sent!",
       description: "Thanks for reaching out. I'll get back to you soon.",
-    })
+    });
 
-    setIsSubmitting(false)
-    e.currentTarget.reset()
-  }
+    setIsSubmitting(false);
+    e.currentTarget.reset();
+  };
 
   return (
     <motion.div
@@ -92,5 +92,5 @@ export function ContactForm() {
         </div>
       </div>
     </motion.div>
-  )
+  );
 }

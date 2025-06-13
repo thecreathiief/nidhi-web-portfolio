@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import type { ReactNode } from "react"
+import { motion } from "framer-motion";
+import type { ReactNode } from "react";
 
 interface GlassmorphicCardProps {
-  children: ReactNode
+  children: ReactNode;
 }
 
 export function GlassmorphicCard({ children }: GlassmorphicCardProps) {
@@ -22,5 +22,5 @@ export function GlassmorphicCard({ children }: GlassmorphicCardProps) {
         <div className="relative">{children}</div>
       </div>
     </motion.div>
-  )
+  );
 }

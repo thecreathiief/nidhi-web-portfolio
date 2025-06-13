@@ -230,9 +230,15 @@ export default function Portfolio() {
                 </div>
 
                 <div className="mt-8">
-                  <Button className="bg-zinc-800 hover:bg-zinc-700 text-white">
-                    Download Resume
-                  </Button>
+                  <Link
+                    href="/resume_nidhi.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button className="bg-zinc-800 hover:bg-zinc-700 text-white">
+                      Download Resume
+                    </Button>
+                  </Link>
                 </div>
               </GlassmorphicCard>
             </div>
