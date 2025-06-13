@@ -90,12 +90,18 @@ export function FloatingNav() {
                   {item.name}
                 </Link>
               ))}
-              <Button
-                size="sm"
-                className="ml-2 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-pink-500 hover:to-purple-500 border-0"
+              <Link
+                href="/resume_nidhi.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Resume
-              </Button>
+                <Button
+                  size="sm"
+                  className="ml-2 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-pink-500 hover:to-purple-500 border-0"
+                >
+                  Resume
+                </Button>
+              </Link>
             </div>
           )}
         </div>
@@ -122,9 +128,15 @@ export function FloatingNav() {
                 {item.name}
               </Link>
             ))}
-            <Button className="mt-6 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-pink-500 hover:to-purple-500 border-0">
-              Resume
-            </Button>
+            <Link
+              href="/resume_nidhi.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button className="mt-6 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-pink-500 hover:to-purple-500 border-0">
+                Resume
+              </Button>
+            </Link>
           </div>
         </motion.div>
       )}
