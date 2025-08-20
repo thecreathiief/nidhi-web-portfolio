@@ -91,7 +91,7 @@ export function FloatingNav() {
                 </Link>
               ))}
               <Link
-                href="/resume_nidhi.pdf"
+                href="/nidhi_jain_resume.pdf?v=1"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -129,7 +129,7 @@ export function FloatingNav() {
               </Link>
             ))}
             <Link
-              href="/resume_nidhi.pdf"
+              href="/nidhi_jain_resume.pdf?v=1"
               target="_blank"
               rel="noopener noreferrer"
             >
